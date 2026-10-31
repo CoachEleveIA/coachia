@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E-mail vérifié</title>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:40px;color:#1B5E20">
+  <h2>✅ Adresse e-mail vérifiée</h2>
+  <p>Retourne dans l'application pour te connecter.</p>
+  <a id="retour"
+     href="intent://connexion#Intent;scheme=coachia;package=com.coachia.app;end"
+     style="display:inline-block;padding:14px 24px;background:#2E7D32;color:#fff;border-radius:8px;text-decoration:none;font-weight:bold">
+     TERMINER LA VALIDATION
+  </a>
+  <script>
+    setTimeout(function () {
+      window.location.href = document.getElementById('retour').href;
+    }, 600);
+  </script>
+</body>
+</html>
